@@ -1,34 +1,47 @@
 <!DOCTYPE html>
 <html>
-<head> 
-<meta charset="utf-8"> 
-<title>ex3</title> 
+<head> 
+<meta charset="utf-8"> 
+<title>基本資料調查</title> 
+<style>
+        body {background-color:#1e90ff;}
+</style>
 </head>
-<body>
-	<table>
-		<tr><td>姓名</td><td><input type="text" name="myname"></td></tr>
-		<tr><td>暱稱</td><td><input type="text" name="myname"></td></tr>
-		<tr><td>性別</td><td><input type="radio" name="mysex" value="male">boy
-			                <input type="radio" name="mysex" value="female">girl</td></tr>
-		<tr><td>姓名</td><td><input type="text" name="myname"></td></tr>
-		<tr><td>日期</td><td><input type="date" name="mydate"></td></tr>
-		<tr><td>選擇</td><td><input list="submits" name="browser">
+<body><center>
+    <h1>基本資料調查</h1>
+    <form>
+        你的姓名<input type="text" name="myname"><br>
+        你的暱稱<input type="text" name="myname"><br>
+        你的性別<input type="radio" name="mysex" value="male">boy
+               <input type="radio" name="mysex" value="female">girl<br>
+        你的學號<input type="text" name="mynumber"><br>
+        填寫日期<input type="date" name="mydate"><br>
+        你的星座<input list="submits" name="choose">
         <datalist id="submits">
-			                <option value="1"></option>
-                            <option value="2"></option>
-                            <option value="3"></option>
-                            <option value="4"></option>
-                            <option value="5"></option>
-		</datalist></td></tr>
-		<tr><td>年齡</td><td><input type="number" name="gender" step="1" min="1">
-			</td></tr>
-		<tr><td>遊戲</td><td><input type="checkbox" name="game" value="fps game">I play fps game
-                            <input type="checkbox" name="game" value="dota game">I play dota game 
-			</td></tr>
-		<tr><td>時間</td><td><input type="time" name="usr_time"></td></tr>
-		<tr><td>    </td><td><input type="submit" value="正常提交"></td></tr>
-	</table>
-	
-
+            <option value="魔羯座"></option>
+            <option value="水瓶座"></option>
+            <option value="雙魚座"></option>
+            <option value="牡羊座"></option>
+            <option value="金牛座"></option>
+            <option value="雙子座"></option>
+            <option value="巨蟹座"></option>
+            <option value="獅子座"></option>
+            <option value="處女座"></option>
+            <option value="天坪座"></option>
+            <option value="天蠍座"></option>
+            <option value="射手座"></option>
+        </datalist><br>
+        你的年齡<input type="number" name="gender" step="1" min="1"><br>
+        你玩的遊戲<input type="checkbox" name="game" value="fps game">射擊 遊戲
+                 <input type="checkbox" name="game" value="dota game">Dota 遊戲 
+                 <input type="checkbox" name="game" value="養成 game">養成 遊戲
+                 <input type="checkbox" name="game" value="RPG game">RPG 遊戲
+                 <input type="checkbox" name="game" value="交友 game">交友 遊戲<br>
+          填寫時間<input type="time" name="usr_time"><br>
+        <img src=https://pbs.twimg.com/profile_images/866586642823426048/V7o0Qf0K_400x400.png><br>
+        <input type="submit" value="送出">
+    
+    </form>
+    </center>
 </body>
 </html>
